@@ -20,7 +20,7 @@
 helm create mychart
 ```
 
-# structure explained
+## advanced structure
 
 .
 ├── mychart
@@ -46,3 +46,7 @@ helm create mychart
 * deployment.yaml: A basic manifest for creating a Kubernetes deployment
 * service.yaml: A basic manifest for creating a service endpoint for your deployment
 * _helpers.tpl: A place to put template helpers that you can re-use throughout the chart
+
+# installation
+helm install <chart-name> <chart-location>
+helm install mychart mychart/
