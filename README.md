@@ -1,6 +1,6 @@
 # helm
 * quick guide to understanding helm
-* chart structure
+* basic chart structure
 
 .
 ├── mychart
@@ -19,3 +19,30 @@
 ```sh
 helm create mychart
 ```
+
+# structure explained
+
+.
+├── mychart
+│   ├── charts
+│   ├── Chart.yaml
+│   ├── templates
+│   │   ├── deployment.yaml
+│   │   ├── _helpers.tpl
+│   │   ├── hpa.yaml
+│   │   ├── ingress.yaml
+│   │   ├── NOTES.txt
+│   │   ├── serviceaccount.yaml
+│   │   ├── service.yaml
+│   │   └── tests
+│   │       └── test-connection.yaml
+│   └── values.yaml
+└── README.md
+
+5 directories, 11 files
+
+## mychart/templates
+* NOTES.txt: The "help text" for your chart. This will be displayed to your users when they run helm install.
+* deployment.yaml: A basic manifest for creating a Kubernetes deployment
+* service.yaml: A basic manifest for creating a service endpoint for your deployment
+* _helpers.tpl: A place to put template helpers that you can re-use throughout the chart
