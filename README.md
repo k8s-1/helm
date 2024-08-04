@@ -48,5 +48,7 @@ helm create mychart
 * _helpers.tpl: A place to put template helpers that you can re-use throughout the chart
 
 # installation
+```
 helm install <chart-name> <chart-path>
 helm install mychart ./mychart
+```
