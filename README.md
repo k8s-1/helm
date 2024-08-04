@@ -1,7 +1,7 @@
 # helm
 * quick guide to understanding helm
 * basic chart structure
-
+```
 .
 ├── mychart
 │   ├── charts
@@ -9,7 +9,7 @@
 │   ├── templates
 │   └── values.yaml
 └── README.md
-
+```
 * charts/ can contain other charts a.k.a. "subcharts"
 * Chart.yaml contains the chart description
 * templates/ is rendered by templating engine into k8s manifests
