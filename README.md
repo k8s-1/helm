@@ -21,7 +21,7 @@ helm create mychart
 ```
 
 ## advanced structure
-
+```
 .
 ├── mychart
 │   ├── charts
@@ -40,7 +40,7 @@ helm create mychart
 └── README.md
 
 5 directories, 11 files
-
+```
 ## mychart/templates
 * NOTES.txt: The "help text" for your chart. This will be displayed to your users when they run helm install.
 * deployment.yaml: A basic manifest for creating a Kubernetes deployment
